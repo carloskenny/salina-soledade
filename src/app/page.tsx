@@ -1,113 +1,163 @@
 import Image from "next/image";
 
+import { useMask } from "@react-input/mask";
+
+import { Botton } from "@/components/botton";
+import { Header } from "@/components/header";
+
+import backCta1 from "../../public/images/FotoBanner.jpeg"
+import backSobreHome from "../../public/images/FotoSobre.jpeg"
+import linhaIndustriaImage from "../../public/images/products/SacoSALMOIDOSOLEDADE25kg.png"
+import linhaAnimalImage from "../../public/images/products/SALBEEF25KGLINHAANIMAL.png"
+import seloEnergiaLimpa from "../../public/images/Logos/SeloEnergiaLimpa.svg"
+
+import iconExperiencia from "../../public/images/IconExperiencia.svg"
+import iconSustentabilidade from "../../public/images/IconSustentabilidade.svg"
+import iconCompromisso from "../../public/images/IconCompromisso.svg"
+
+import { CardIndicator } from "@/components/cardIndicator";
+import CarouselProduction from "@/components/sliderProduction";
+
+
+
 export default function Home() {
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <div className=" xl:w-[90rem] lg:w-[90rem]  bg-gray-100">
+      {/* Menu Navegação */}
+      <Header/>
+      
+      {/* CTA */}
+      <div className=" flex flex-col">
+        <Image 
+            src={backCta1}
+            className="object-cover object-bottom h-[50rem]"
+            alt="Vista sob o telhado com placas de enegia solar e colina de Sal"
+        />
+        <div className="bg-secundary/75 -mt-24 h-24 flex justify-center items-center text-5xl font-medium text-white"> 
+              <span> Qualidade desde 1969 </span>
+        </div>
+      </div>
+      
+      {/* Sobre */}
+      <div className="flex flex-col p-12 gap-12 justify-center">
+      
+        {/* Quadro Experiência Sustentabilidade Compromisso */}
+        <div className="flex flex-col gap-12 items-center">
+          <div className="text-4xl font-semibold text-primary">
+            <p>Confiança e Respeito</p>
+          </div>
+          <div className="flex gap-24">
+            <div className="max-w-72 border-2 border-slate-500/75 flex flex-col gap-4 p-8 rounded-xl ">
+                <Image className="h-12 w-12" src={iconExperiencia} alt="Icone diploma" />
+                <p className="text-2xl font-bold">Experiência</p>
+                <p>Temos profissionais com mais de 30 anos de experiência.</p>
+            </div>
+            <div className="max-w-72 border-2 border-slate-500/75 flex flex-col gap-4 p-8 rounded-xl ">
+                <Image className="h-12 w-12" src={iconSustentabilidade} alt="Icone Folha" />
+                <p className="text-2xl font-bold">Sustentabilidade</p>
+                <p>Utilizamos energia limpa e sustentável.</p>
+            </div>                
+            <div className="max-w-72 border-2 border-slate-500/75 flex flex-col gap-4 p-8 rounded-xl ">
+                <Image className="h-12 w-12" src={iconCompromisso} alt="Icone Caminhão" />
+                <p className="text-2xl font-bold">Compromisso</p>
+                <p>Temos os melhores  transportadores para todo o Brasil.</p>
+            </div>
+          </div>
+        </div>
+      
+        {/* Nossa História */}
+        <div className="flex flex-row-reverse p-8 max-h-min justify-center items-center">
+            {/* Tratos */}
+            <Image 
+              src={backSobreHome}
+              className="object-cover object-left rounded-2xl w-3/5"
+              alt="Vista sob o telhado com placas de enegia solar e colina de Sal"
             />
-          </a>
+            {/* Texto */}
+            <div className="relative flex flex-col gap-8 bg-secundary -mr-12 p-12 w-2/5 text-slate-200 rounded-2xl">
+              <span className="place-self-center font-bold text-4xl">Nossa História...</span>
+              <p className="font-medium text-xl">Há mais de 50 anos atuando no mercado brasileiro, reconhecida 
+                nacionalmente pela qualidade dos produtos e atendimento customizado. 
+              </p>
+              <p className="font-medium text-xl">Estamos melhorando continuamente nossos sistemas e processos 
+                produtivos, com objetivo de atender as demandas dos nossos clientes.</p>
+              
+              <button
+                className="bg-slate-300 p-4 rounded-xl text-primary font-semibold"
+                >Veja mais sobre nós!</button>
+
+            </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Produtos */}
+      <div className="flex flex-col justify-center items-center py-8 pb-16 gap-8 max-h-min bg-slate-300/60">
+        <div className="text-4xl font-semibold text-primary p-4">Produtos</div>
+        <div className="flex flex-1 gap-32">
+          <div className="flex flex-col justify-center gap-4 items-center p-2 size-96 bg-slate-100 rounded-xl">
+            <Image className="w-72" src={linhaIndustriaImage} alt="Imagem do Produto Sal Moído de 25 kg" />
+            <div className="border-2 border-collapse border-slate-400/60 w-1/3"/>
+            <div className="font-semibold text-2xl text-primary">Linha Indústria</div>
+          </div>
+          <div className="flex flex-col justify-center gap-4 items-center p-2 size-96 bg-slate-100 rounded-xl">
+            <Image className="w-72" src={linhaAnimalImage} alt="Imagem do Produto Sal Moído de 25 kg" />
+            <div className="border-2 border-collapse border-slate-400/60 w-1/3"/>
+            <div className="font-semibold text-2xl text-primary">Linha Indústria</div>
+          </div>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* Prova Social */}
+      <div className="flex flex-row p-8 justify-center items-center">
+        <div className="w-1/2 p-8 ml-16">
+          <CardIndicator title="84" description="Toneladas/Dia" order={1} />
+          <CardIndicator title="27mil" description="Hectáres" order={2} />
+          <CardIndicator title="+3mil" description="Clientes/Mês" order={3}/>
+          <CardIndicator title="2" description="Usinas Solares" order={4}/>
+        </div>
+        <div className="flex flex-col justify-center items-center w-1/2 p-2">
+          <Image className="w-96" src={seloEnergiaLimpa} alt="Selo empresa energia limpa" />
+          <p className="text-2xl text-center w-2/3">Somos a primeira Salina do Brasil com geração própria de energia limpa.</p>
+        </div>
+        
       </div>
-    </main>
+
+      {/* Slider Produção */}      
+      <div className="mx-24 mb-12">
+        <CarouselProduction/>
+      </div>
+      
+      {/* Contato Form */}
+      <div className="flex flex-col justify-items-center items-center pb-12 py-4  bg-slate-300/60">
+        <div className="flex flex-col justify-center items-center mb-8">
+          <div className="text-4xl font-semibold text-primary p-8" id="vamosconversar">Vamos Conversar</div>
+          <p className="text-2xl">Estamos apenas a uma mensagem de distância.</p>
+          <p className="text-2xl">Preencha os campos ou mande um alô no Whatsapp!</p>
+        </div>
+        <div>
+          <form action="" className="grid grid-cols-2 gap-4 text-xl ">
+            <input className="p-2 rounded-lg" type="text" name="name" placeholder="Seu nome" required />
+            <input className="p-2 rounded-lg" type="email" name="email" id="" placeholder="Email" />
+            <input className="p-2 rounded-lg" type="text" name="asssunto" placeholder="Assunto da mensagem" />
+            <input 
+                className="p-2 rounded-lg" 
+                type="text"
+                required
+                name="contato" 
+                id="" 
+                placeholder="Contato" />
+            <textarea  className="p-2 rounded-lg resize-none col-span-2" name="mensage" id="" cols={30} rows={10} placeholder="Mensagem"></textarea>
+            <button
+                className="justify-self-center col-span-2 px-12 py-4 bg-secundary text-slate-100 font-bold text-xl rounded-xl"
+                type="button"> Enviar 
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Rodapé */}
+      <Botton/>
+    </div>
   );
 }
