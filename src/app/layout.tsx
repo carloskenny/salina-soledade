@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="pt">
       
         <body className={workSans.className}>
-          <div className="flex justify-center bg-slate-200">
+          <div className="flex justify-center bg-slate-200 antialiased">
             {children}
             <WhatsAppLink/>
           </div>

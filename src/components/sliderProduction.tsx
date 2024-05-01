@@ -36,7 +36,7 @@ const CarouselProduction = () => {
         <div className="relative">
             
             <Carousel className="px-12" dots prevArrow={previusIconAction} nextArrow={nextIconAction} effect="fade" >
-                <div className=' flex flex-col justify-center items-center object-contain'>
+                <div>
                     <Image 
                         className="object-cover h-[40rem] rounded-2xl w-[100%]"
                         src={captacao01} 
