@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      
+        <head>
+          <link rel="icon" href="/salina.ico" />
+        </head>
         <body className={workSans.className}>
           <div className="flex justify-center bg-slate-200 antialiased">
             {children}
