@@ -13,25 +13,25 @@ const MenuItens = () => {
   return (
     <div className={menuStyle}>
       <a
-        className="block mt-4 md:inline-block md:mt-0  hover:text-white mr-4"
+        className="block mt-4 md:inline-block md:mt-0  hover:text-secundary mr-4 hover:scale-105 transition-transform"
         href="/"
       >
         INÍCIO
       </a>
       <a
-        className="block mt-4 md:inline-block md:mt-0  hover:text-white mr-4"
+        className="block mt-4 md:inline-block md:mt-0  hover:text-secundary mr-4 hover:scale-105 transition-transform"
         href="/sobre"
       >
         SOBRE
       </a>
       <a
-        className="block mt-4 md:inline-block md:mt-0  hover:text-white mr-4"
+        className="block mt-4 md:inline-block md:mt-0  hover:text-secundary mr-4 hover:scale-105 transition-transform"
         href="/produtos"
       >
         PRODUTOS
       </a>
       <a
-        className="block mt-4 md:inline-block md:mt-0  hover:text-white mr-4"
+        className="block mt-4 md:inline-block md:mt-0  hover:text-secundary mr-4 hover:scale-105 transition-transform"
         href="/#vamosconversar"
       >
         CONTATO
