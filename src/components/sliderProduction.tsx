@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Image from "next/image";
 
 import { Carousel } from "antd";
@@ -11,12 +13,27 @@ import colheita03 from "../../public/images/production/03Colheita.png";
 import estocagem05 from "../../public/images/production/05Estocagem.png";
 import beneficiamento06 from "../../public/images/production/06Beneficiamento.png";
 import analise07 from "../../public/images/production/07Analise.png";
+import { CarouselRef } from "antd/es/carousel";
 
 const lavagem04 = "./movies/04Lavagem.mp4";
 
 const CarouselProduction = () => {
+  let sliderRef = useRef<CarouselRef>(null);
+
+  const next = () => {
+    if (sliderRef.current) {
+      sliderRef.current.next()
+    }
+  };
+
+  const previous = () => {
+    if (sliderRef.current) {
+      sliderRef.current.prev()
+    }
+  };
+
   return (
-    <div className="md:py-8">
+    <div className="px-2 md:py-8">
       <div className="md:py-8 flex flex-1 justify-center">
         <div className="text-2xl md:text-4xl md:w-max font-semibold text-primary p-4">
           Processo Produtivo
@@ -24,12 +41,13 @@ const CarouselProduction = () => {
       </div>
       <div className="relative">
         <Carousel
-          className="md:px-12"
+          ref={sliderRef}
           dots
           dotPosition="top"
           effect="fade"
+          speed={500}
         >
-          <div>
+          <div key={1}>
             <Image
               className="object-cover h-max md:h-[40rem] w-[100%] rounded-t-xl md:rounded-t-2xl"
               src={captacao01}
@@ -43,7 +61,7 @@ const CarouselProduction = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div key={2}>
             <Image
               className="object-cover h-max md:h-[40rem] rounded-t-2xl w-[100%]"
               src={evaporacao02}
@@ -59,7 +77,7 @@ const CarouselProduction = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div key={3}>
             <Image
               className="object-cover h-max md:h-[40rem] rounded-t-2xl w-[100%]"
               src={colheita03}
@@ -73,9 +91,10 @@ const CarouselProduction = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div key={4}>
             <video
               autoPlay
+              muted
               loop
               className="object-cover h-max md:h-[40rem] w-[100%] rounded-t-2xl object-center"
             >
@@ -90,7 +109,7 @@ const CarouselProduction = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div key={5}>
             <Image
               className="object-cover h-max md:h-[40rem] rounded-t-2xl w-[100%]"
               src={estocagem05}
@@ -107,7 +126,7 @@ const CarouselProduction = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div key={6}>
             <Image
               className="object-cover h-max md:h-[40rem] rounded-t-2xl w-[100%]"
               src={beneficiamento06}
@@ -122,7 +141,7 @@ const CarouselProduction = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div key={7}>
             <Image
               className="object-cover h-max md:h-[40rem] rounded-t-2xl w-[100%]"
               src={analise07}
@@ -138,10 +157,16 @@ const CarouselProduction = () => {
             </div>
           </div>
         </Carousel>
-        <div className="absolute left-16 bottom-1/2 flex flex-1 p-4 size-16 justify-center items-center rounded-2xl bg-slate-200/20 hover:bg-slate-200/50 hover:cursor-pointer invisible md:visible">
+        <div
+          className="absolute left-16 bottom-1/2 flex flex-1 p-4 size-16 justify-center items-center rounded-2xl bg-slate-200/20 hover:bg-slate-200/50 hover:cursor-pointer invisible md:visible"
+          onClick={previous}
+        >
           <ChevronLeft className="size-6 text-primary" />
         </div>
-        <div className="absolute right-16 bottom-1/2 flex flex-1 p-4 size-16 justify-center items-center rounded-2xl bg-slate-200/20 hover:bg-slate-200/50 hover:cursor-pointer invisible md:visible">
+        <div
+          className="absolute right-16 bottom-1/2 flex flex-1 p-4 size-16 justify-center items-center rounded-2xl bg-slate-200/20 hover:bg-slate-200/50 hover:cursor-pointer invisible md:visible"
+          onClick={next}
+        >
           <ChevronRight className="size-6 text-primary" />
         </div>
       </div>

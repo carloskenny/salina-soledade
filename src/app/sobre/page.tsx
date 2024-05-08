@@ -8,12 +8,12 @@ import logoValores from "../../../public/images/Logos/LogoSalina.svg"
 
 export default function Sobre() {
   return (
-    <div className=" xl:w-[90rem] lg:w-[90rem]">
+    <div className="md:w-screen lg:w-[80%] bg-gray-100">
       <Header/>
-      <div className="flex flex-col px-24 py-12 gap-16 bg-slate-300/60">
+      <div className="flex flex-col p-8 gap-8 lg:px-24 lg:py-12 lg:gap-16 bg-slate-300/60">
         <span className="font-bold text-4xl text-primary">Nossa História...</span>
-        <div className="flex flex-row gap-12 items-center">
-          <div className="text-xl text leading-loose">
+        <div className="flex flex-col gap-4 lg:flex-row lg:gap-12 items-center">
+          <div className="text-xl text-justify lg:leading-loose">
             <p>A Salina Soledade é uma das mais tradicionais indústrias salineiras 
               do Rio Grande do Norte. Atuando no mercado brasileiro desde 1969, a 
               empresa é reconhecida nacionalmente pela qualidade dos seus produtos. 
@@ -26,12 +26,12 @@ export default function Sobre() {
             src={sobre01aerea} alt="">
           </Image>
         </div>
-        <div className="flex flex-row gap-12 items-center">
+        <div className="flex flex-col-reverse gap-4 lg:flex-row lg:gap-12 items-center">
           <Image 
             className="object-cover h-[20rem] w-[50rem] rounded-3xl shadow-xl"
             src={sobre02carregamento} alt="">
           </Image>
-          <div className="text-xl text leading-loose">
+          <div className="text-xl text-justify lg:leading-loose">
             <p>Com um mix de produtos desenvolvido para atender os mais diversos 
               tipos de indústrias, a Salina Soledade fornece qualidade e atendimento 
               customizado. </p>
@@ -40,44 +40,44 @@ export default function Sobre() {
               está mais próximo da sua empresa.</p>
           </div >
         </div>
-        <div className="flex flex-col items-center text-3xl font-semibold leading-snug">
+        <div className="flex flex-col items-center text-center text-xl md:text-3xl font-semibold leading-snug">
           <p> Nossos valores são para nós, verdadeiros pontos concretos de esforço.</p>
           <p> São a base que sustenta e orienta as nossas ações.</p>
         </div>
         <div className="flex flex-col gap-4">
-          <div className="flex flex-1 items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
+          <div className="flex flex-col gap-2 text-center md:flex-row items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
             <Image className="w-20" src={logoValores} alt="Logomarca Salina em escala de cinza"></Image>
             <div className="mx-4 w-44 text-center font-semibold">Confiança</div>
-            <div className="text-slate-500">Sermos uma empresa sólida e confiável para nossos clientes, fornecedores e colaboradores.</div>
+            <p className="text-slate-500">Sermos uma empresa sólida e confiável para nossos clientes, fornecedores e colaboradores.</p>
           </div>
-          <div className="flex flex-1 items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
+          <div className="flex flex-col gap-2 text-center md:flex-row items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
             <Image className="w-20" src={logoValores} alt="Logomarca Salina em escala de cinza"></Image>
             <div className="mx-4 w-44 text-center font-semibold">Conhecimento</div>
-            <div className="text-slate-500">Buscar sempre aumentar nosso conhecimento e desenvolver nossos colaboradores.</div>
+            <p className="text-slate-500">Buscar sempre aumentar nosso conhecimento e desenvolver nossos colaboradores.</p>
           </div>
-          <div className="flex flex-1 items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
+          <div className="flex flex-col gap-2 text-center md:flex-row items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
             <Image className="w-20" src={logoValores} alt="Logomarca Salina em escala de cinza"></Image>
             <div className="mx-4 w-44 text-center font-semibold">Respeito</div>
-            <div className="text-slate-500">Estabelecer relacionamentos pautados pelo respeito aos nossos clientes, fornecedores e colaboradores.</div>
+            <p className="text-slate-500">Estabelecer relacionamentos pautados pelo respeito aos nossos clientes, fornecedores e colaboradores.</p>
           </div>
-          <div className="flex flex-1 items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
+          <div className="flex flex-col gap-2 text-center md:flex-row items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
             <Image className="w-20" src={logoValores} alt="Logomarca Salina em escala de cinza"></Image>
             <div className="mx-4 w-44 text-center font-semibold">Foco</div>
-            <div className="text-slate-500">Trabalhar focado em atender as demandas e requisitos dos nossos clientes.</div>
+            <p className="text-slate-500">Trabalhar focado em atender as demandas e requisitos dos nossos clientes.</p>
           </div>
-          <div className="flex flex-1 items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
+          <div className="flex flex-col gap-2 text-center md:flex-row items-center bg-slate-100 p-4 text-xl border-collapse border-2 border-slate-500/60 rounded-lg">
             <Image className="w-20" src={logoValores} alt="Logomarca Salina em escala de cinza"></Image>
             <div className="mx-4 w-44 text-center font-semibold">Sustentabilidade</div>
-            <div className="text-slate-500 w-[54rem]">Produzir respeitando e cuidando do Meio Ambiente. Somos a primeira Salina do Brasil com geração própria de energia limpa, através de nossas duas usinas de energia solar.</div>
+            <p className="text-slate-500">Produzir respeitando e cuidando do Meio Ambiente. Somos a primeira Salina do Brasil com geração própria de energia limpa, através de nossas duas usinas de energia solar.</p>
           </div>
         </div>
-        <span className="font-bold text-4xl text-primary">Nossa Logística...</span>
-          <div className="flex flex-1 gap-12 items-center">
+        <span className="font-bold text-center text-4xl text-primary">Nossa Logística...</span>
+          <div className="flex flex-col lg:flex-row gap-4 items-center">
             <Image 
-              className="object-cover h-[40rem] w-[30rem] rounded-3xl shadow-xl"
+              className="object-cover h-[20rem] w-[50rem] lg:h-[40rem] lg:w-[30rem] rounded-3xl shadow-xl"
               src={sobre01aerea} alt="">
             </Image>
-            <div className="text-xl text leading-loose w-[40%]">
+            <div className="text-xl text-justify lg:leading-loose p-4">
               <p>Por ser uma área muito importante para o eficiente atendimento dos 
               nossos clientes e o sucesso da nossa operação. A Salina Soledade conta com 
               uma equipe que possui mais de 30 anos de experiência em logística.</p>
