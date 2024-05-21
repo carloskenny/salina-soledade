@@ -7,7 +7,7 @@ const workSans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Salina Soledade",
-  description: "Qualidade desde 1069",
+  description: "Qualidade desde 1969",
 };
 
 export default function RootLayout({
