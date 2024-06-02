@@ -41,24 +41,24 @@ const BannerCTA = () => {
             effect="fade"
             speed={500}
         >
-          <div key={1}>
+          <a href="/produtos" key={1}>
+            <Image className="" src={banner02} alt="Foto area com painéis solares no telhado."/>
+          </a>
+          <a href="/produtos" key={2}>
+            <Image className="" src={banner03} alt="Foto area com painéis solares no telhado."/>
+          </a>
+          <a href="/produtos" key={3}>
+            <Image className="" src={banner04} alt="Foto area com painéis solares no telhado."/>
+          </a>
+          <a href="/sobre" key={4} >
             <div className="absolute text-primary text-xl md:text-4xl md:p-6 font-semibold p-3">Desde 1969 entregando qualidade!</div>
             <Image
-            className="w-32 bottom-0 h-auto absolute md:bottom-2 right-3 md:w-80"
-            src={seloEnergiaLimpa}
-            alt="Selo empresa energia limpa"
-          />
-            <Image className="w-full" src={banner01} alt="Foto area com painéis solares no telhado."></Image>
-          </div>
-          <div key={2}>
-            <Image className="" src={banner02} alt="Foto area com painéis solares no telhado."></Image>
-          </div>
-          <div key={3}>
-            <Image className="" src={banner03} alt="Foto area com painéis solares no telhado."></Image>
-          </div>
-          <div key={4}>
-            <Image className="" src={banner04} alt="Foto area com painéis solares no telhado."></Image>
-          </div>
+              className="w-32 bottom-0 h-auto absolute md:bottom-2 right-3 md:w-80"
+              src={seloEnergiaLimpa}
+              alt="Selo empresa energia limpa"
+            />
+            <Image className="w-full" src={banner01} alt="Foto area com painéis solares no telhado."/>
+          </a>
           
         </Carousel>
     </div>
