@@ -12,7 +12,7 @@ import animMoido from "../../../public/images/products/SALBEEF25KGLINHAANIMAL.pn
 
 export default function Produtos() {
   return (
-    <div className=" xl:w-[90rem] lg:w-[90rem]  bg-gray-100">
+    <div className="lg:w-10/12  bg-gray-100">
       <Header/>
       <div className="flex flex-col px-8 pb-8 md:py-8 md:gap-8 items-center bg-slate-300/60">
         <div className="text-2xl p-4 lg:text-3xl text-primary font-semibold">Linha Indústria</div>

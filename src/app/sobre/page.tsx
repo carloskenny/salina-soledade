@@ -11,7 +11,7 @@ import logoProdutos from "../../../public/images/bannerCta/Banner03.png"
 
 export default function Sobre() {
   return (
-    <div className="md:w-screen lg:w-[80%] bg-gray-100">
+    <div className="md:w-screen lg:w-10/12 bg-gray-100">
       <Header/>
       <div className="flex flex-col p-8 gap-8 lg:px-24 lg:py-12 lg:gap-16 bg-slate-300/60">
         <span className="font-bold text-4xl text-primary">Nossa História...</span>

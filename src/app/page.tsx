@@ -21,7 +21,7 @@ export default function Home() {
 
 
   return (
-    <div className="md:w-screen lg:w-[80%] bg-gray-100">
+    <div className="md:w-screen lg:w-10/12 bg-gray-100">
       {/* Menu Navegação */}
       <Header />
 

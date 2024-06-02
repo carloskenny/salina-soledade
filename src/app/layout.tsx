@@ -21,7 +21,7 @@ export default function RootLayout({
           <link rel="icon" href="/salina.ico" />
         </head>
         <body className={workSans.className}>
-          <div className="w-screen md:flex md:justify-center bg-slate-200 antialiased">
+          <div className="w-full md:flex md:justify-center bg-slate-200 antialiased">
             {children}
             <WhatsAppLink/>
           </div>
