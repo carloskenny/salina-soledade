@@ -133,7 +133,7 @@ const CarouselProduction = () => {
               alt="Bomba captando água para produção de sal."
             />
             <div className="relative bg-secundary px-4 py-2 text-slate-100 rounded-b-xl md:rounded-b-2xl md:h-28 md:-mt-20">
-              <p className="text-lg md:text-xl font-semibold">Beneficiamento</p>
+              <p className="text-lg md:text-xl font-semibold">Expedição</p>
               <p className="text-base md:text-lg">
                 Após o período de cura, o sal é transportado para o setor de
                 beneficiamento para ser preparado de acordo com a sua aplicação
@@ -148,7 +148,7 @@ const CarouselProduction = () => {
               alt="Bomba captando água para produção de sal."
             />
             <div className="relative bg-secundary px-4 py-2 text-slate-100 rounded-b-xl md:rounded-b-2xl md:h-28 md:-mt-20">
-              <p className="text-lg md:text-xl font-semibold">Análise</p>
+              <p className="text-lg md:text-xl font-semibold">Controle de Qualidade</p>
               <p className="text-base md:text-lg">
                 A partir da etapa de lavagem o sal é analisado em laboratório
                 próprio para acompanhamento e garantia da qualidade dos cristais
