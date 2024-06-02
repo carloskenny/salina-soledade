@@ -37,25 +37,25 @@ export function Botton() {
         </div>
         <div className="flex flex-col text-center gap-8 md:gap-12 md:w-max">
           <div className="flex flex-col gap-2 md:gap-4">
-            <div className="text-lg md:text-xl text-primary font-semibold">
+            <div className="text-lg md:text-2xl text-primary font-semibold">
               COMERCIAL
             </div>
             <div className="flex flex-col text-xl md:text-2xl">
               <a href="mailto:comercial@salinasoledade.com.br">comercial@salinasoledade.com.br</a>
-              <a className="text-primary text-4xl text-center md:text-left md:text-3xl font-semibold mt-2"
+              <a className="text-primary text-4xl md:text-3xl font-semibold mt-2"
                 href="tel:+558440086600">
                 84 4008.6600
               </a>
             </div>
           </div>
-          <div className="flex flex-row self-center gap-8">
+          <div className="flex flex-auto justify-center gap-4">
             <Image
-              className="max-h-24 w-1/2"
+              className="max-h-20 w-32"
               src={SalSoledade}
               alt="Logo Produto Sal Soledade"
             />
             <Image
-              className="max-h-24 w-1/2"
+              className="max-h-20 w-32"
               src={SalBeef}
               alt="Logo Produto Sal Beef"
             />

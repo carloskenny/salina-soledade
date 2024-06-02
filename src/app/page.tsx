@@ -15,6 +15,7 @@ import iconCompromisso from "../../public/images/IconCompromisso.svg";
 
 import { CardIndicator } from "@/components/cardIndicator";
 import CarouselProduction from "@/components/sliderProduction";
+import BannerCTA from "@/components/bannerCta";
 
 export default function Home() {
 
@@ -25,7 +26,8 @@ export default function Home() {
       <Header />
 
       {/* CTA */}
-      <div className="flex flex-col h-72 md:h-[30rem] lg:h-[50rem]">
+      <BannerCTA/>
+      {/* <div className="bg-slate-500 h-72 md:h-[30rem] lg:h-[50rem]">
         <Image
           src={backCta1}
           className="object-cover object-center h-72 md:h-[30rem] lg:h-[50rem] "
@@ -34,7 +36,7 @@ export default function Home() {
         <div className="relative flex justify-center items-center text-xl py-1.5 bottom-10 lg:text-4xl lg:p-5 lg:bottom-20 font-medium text-white  bg-secundary/75">
           <span> Qualidade desde 1969 </span>
         </div>
-      </div>
+      </div> */}
 
       {/* Sobre */}
       <div className="flex flex-col py-4 lg:p-8 justify-center">
@@ -160,9 +162,9 @@ export default function Home() {
       {/* Prova Social */}
       <div className="flex flex-col-reverse lg:flex-row p-8 justify-center items-center">
         <div className="p-8 md:w-1/2 lg:ml-16">
-          <CardIndicator title="84" description="Toneladas/Dia" order={1} />
-          <CardIndicator title="27mil" description="Hectáres" order={2} />
-          <CardIndicator title="+3mil" description="Clientes/Mês" order={3} />
+          <CardIndicator title="3.000.000 m²" description="Área Produtiva" order={1} />
+          <CardIndicator title="300 carretas" description="Carregadas/Mês" order={2} />
+          <CardIndicator title="90.000 m²" description="Preservação Ambiental" order={3} />
           <CardIndicator title="2" description="Usinas Solares" order={4} />
         </div>
         <div className="flex flex-col justify-center items-center md:w-1/2 p-2">

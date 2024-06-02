@@ -4,7 +4,10 @@ import Image from "next/image";
 
 import sobre01aerea from "../../../public/images/sobre/sobre01vistaAerea.jpeg"
 import sobre02carregamento from "../../../public/images/sobre/sobre02carregamento.jpeg"
+
 import logoValores from "../../../public/images/Logos/LogoSalina.svg"
+import logoProdutos from "../../../public/images/bannerCta/Banner03.png"
+
 
 export default function Sobre() {
   return (
@@ -23,14 +26,16 @@ export default function Sobre() {
           </div >
           <Image 
             className="object-cover h-[20rem] w-[50rem] rounded-3xl shadow-xl"
-            src={sobre01aerea} alt="">
+            src={sobre01aerea}  alt="">
           </Image>
         </div>
         <div className="flex flex-col-reverse gap-4 lg:flex-row lg:gap-12 items-center">
-          <Image 
-            className="object-cover h-[20rem] w-[50rem] rounded-3xl shadow-xl"
-            src={sobre02carregamento} alt="">
-          </Image>
+          <a  href="/produtos">
+            <Image 
+              className="object-cover object-left h-[20rem] w-[50rem] rounded-3xl shadow-xl"
+              src={logoProdutos} alt="">
+            </Image>
+          </a>
           <div className="text-xl text-justify lg:leading-loose">
             <p>Com um mix de produtos desenvolvido para atender os mais diversos 
               tipos de indústrias, a Salina Soledade fornece qualidade e atendimento 
@@ -75,7 +80,7 @@ export default function Sobre() {
           <div className="flex flex-col lg:flex-row gap-4 items-center">
             <Image 
               className="object-cover h-[20rem] w-[50rem] lg:h-[40rem] lg:w-[30rem] rounded-3xl shadow-xl"
-              src={sobre01aerea} alt="">
+              src={sobre02carregamento} alt="">
             </Image>
             <div className="text-xl text-justify lg:leading-loose p-4">
               <p>Por ser uma área muito importante para o eficiente atendimento dos 

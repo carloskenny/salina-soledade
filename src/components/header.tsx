@@ -58,11 +58,13 @@ export function Header() {
   return (
     <nav className="flex flex-wrap items-center justify-between p-4 bg-slate-100">
       <div className="flex items-center flex-shrink-0 mr-6">
-        <Image
-          className="w-60 p-2 md:w-80 px-4"
-          src={salinaLogo}
-          alt="Logo Salina Soledade"
-        />
+        <a href="/">
+          <Image
+            className="w-60 p-2 md:w-80 px-4"
+            src={salinaLogo}
+            alt="Logo Salina Soledade"
+          />
+        </a>
       </div>
       <div className="block md:hidden">
         <button

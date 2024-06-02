@@ -14,34 +14,34 @@ export default function Produtos() {
   return (
     <div className=" xl:w-[90rem] lg:w-[90rem]  bg-gray-100">
       <Header/>
-      <div className="flex flex-col px-8 pb-8  md:py-8 md:gap-8 items-center bg-slate-300/60">
+      <div className="flex flex-col px-8 pb-8 md:py-8 md:gap-8 items-center bg-slate-300/60">
         <div className="text-2xl p-4 lg:text-3xl text-primary font-semibold">Linha Indústria</div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <div className="flex flex-col md:w-[25rem] items-center py-8 px-8 gap-2 text-primary bg-slate-100 rounded-lg">
             <Image className="object-contain h-56" src={indSalGrosso} alt="Foto do saco de Sal Grosso de 25kg"></Image>
             <div className="border-2 border-collapse border-slate-400/60 w-9/12"></div>
             <div className="text-xl font-semibold">SAL SOLEDAD GROSSO</div>
-            <div>25kg | 50kg</div>
+            <div className="text-sm">25kg | 50kg</div>
           </div>
           <div className="flex flex-col md:w-[25rem] items-center py-8 px-8 gap-2 text-primary bg-slate-100 rounded-lg">
             <Image className="object-contain h-56" src={indSalMoido} alt="Foto do saco de Sal Grosso de 25kg"></Image>
             <div className="border-2 border-collapse border-slate-400/60 w-9/12"></div>
             <div className="text-xl font-semibold">SAL SOLEDAD MOÍDO</div>
-            <div>25kg</div>
+            <div className="text-sm">25kg</div>
             <div>Com Iodo | Sem Iodo</div>
           </div>
           <div className="flex flex-col md:w-[25rem] items-center py-8 px-8 gap-2 text-primary bg-slate-100 rounded-lg">
             <Image className="object-contain h-56" src={indSalRefinado} alt="Foto do saco de Sal Grosso de 25kg"></Image>
             <div className="border-2 border-collapse border-slate-400/60 w-9/12"></div>
             <div className="text-xl font-semibold">SAL SOLEDAD REFINADO</div>
-            <div>25kg</div>
+            <div className="text-sm">25kg</div>
             <div>Com Iodo | Sem Iodo</div>
           </div>
-          <div className="flex flex-col md:w-[25rem] items-center py-8 px-8 gap-2 text-primary bg-slate-100 rounded-lg">
+          <div className="flex flex-col md:w-[25rem] items-center py-8 px-2 gap-2 text-primary bg-slate-100 rounded-lg">
             <Image className="object-contain h-56" src={indBigBag} alt="Foto do saco de Sal Grosso de 25kg"></Image>
             <div className="border-2 border-collapse border-slate-400/60 w-9/12"></div>
             <div className="text-xl font-semibold">SAL SOLEDAD</div>
-            <div>GROSSO | MOÍDO | REFINADO | GRANULADO</div>
+            <div className="text-sm">GROSSO | MOÍDO | REFINADO | GRANULADO</div>
             <div>Big Bag - 1000kg</div>
           </div>
         </div>
