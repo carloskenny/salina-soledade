@@ -38,6 +38,14 @@ export default function ContactForm() {
       console.log(responseData["message"]);
 
       alert("Sua mensagem foi enviada com sucesso!");
+
+      setName('')
+      setFrom('')
+      setSubject('')
+      setContact('')
+      setText('')
+
+
       setLoading(false);
     } catch (error) {
       console.log(error);
