@@ -22,8 +22,20 @@ O site tem uma página principal no modelo landingpage e outras páginas de apoi
     git clone
 - Instalar as dependências:
     npm install
-- Configurar o arquivo .env:
-    crie um arquivo na raiz do projeto com as variáveis iguais ao arquivo .env.example
+- Configurar o arquivo .env.local:
+- 
+    crie o arquivo .env.local na raiz do projeto com as variáveis iguais ao arquivo .env.example
+      - NEXT_PUBLIC_EMAIL_HOST: servidor smtp
+          ex.: smtp.dominio.com
+      - NEXT_PUBLIC_EMAIL_PORT: porta do servidor smtp (465 ou 587)
+          ex.: 465
+      - NEXT_PUBLIC_EMAIL_USER: email/user a ser utlizado para enviar as informações do formulário (Remetente)
+          ex.: username@dominio.com.br
+      - NEXT_PUBLIC_EMAIL_PASSWORD: senha do email/user
+          ex.:
+      - NEXT_PUBLIC_EMAIL_TO: endereços de email a enviar as informações (Destinatário) separado por vírgulas sem espaço.
+          ex.: username1@dominio.com.br,username2@dominio.com.br
+
 - Iniciar o serviço em desenvolvimento:
     npm run dev
 - Iniciar o serviço em produção:
