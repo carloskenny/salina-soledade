@@ -16,6 +16,7 @@ import iconCompromisso from "../../public/images/IconCompromisso.svg";
 import { CardIndicator } from "@/components/cardIndicator";
 import CarouselProduction from "@/components/sliderProduction";
 import BannerCTA from "@/components/bannerCta";
+import ContactForm from "@/components/contact";
 
 export default function Home() {
 
@@ -27,16 +28,7 @@ export default function Home() {
 
       {/* CTA */}
       <BannerCTA/>
-      {/* <div className="bg-slate-500 h-72 md:h-[30rem] lg:h-[50rem]">
-        <Image
-          src={backCta1}
-          className="object-cover object-center h-72 md:h-[30rem] lg:h-[50rem] "
-          alt="Vista sob o telhado com placas de enegia solar e colina de Sal"
-        />
-        <div className="relative flex justify-center items-center text-xl py-1.5 bottom-10 lg:text-4xl lg:p-5 lg:bottom-20 font-medium text-white  bg-secundary/75">
-          <span> Qualidade desde 1969 </span>
-        </div>
-      </div> */}
+      
 
       {/* Sobre */}
       <div className="flex flex-col py-4 lg:p-8 justify-center">
@@ -184,32 +176,7 @@ export default function Home() {
       <CarouselProduction />
 
       {/* Contato Form */}
-      <div className="flex flex-col justify-items-center items-center py-4 pb-8 md:pb-12 md:py-4  bg-slate-300/60">
-        <div className="flex flex-col justify-center items-center px-2 mb-8">
-          <div className="text-2xl p-4 md:text-4xl md:p-8 font-semibold text-primary " id="vamosconversar">Vamos Conversar</div>
-          <p className="text-center md:text-2xl">Estamos apenas a uma mensagem de distância.</p>
-          <p className="text-center md:text-2xl">Preencha os campos ou mande um alô no Whatsapp!</p>
-        </div>
-        <div>
-          <form action="" className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xl ">
-            <input className="p-2 rounded-lg" type="text" name="name" placeholder="Seu nome" required />
-            <input className="p-2 rounded-lg" type="email" name="email" id="" placeholder="Email" />
-            <input className="p-2 rounded-lg" type="text" name="asssunto" placeholder="Assunto da mensagem" />
-            <input 
-                className="p-2 rounded-lg" 
-                type="text"
-                required
-                name="contato" 
-                id="" 
-                placeholder="Contato" />
-            <textarea  className="p-2 rounded-lg resize-none md:col-span-2" name="mensage" id="" cols={30} rows={4} placeholder="Mensagem"></textarea>
-            <button
-                className="justify-self-center md:col-span-2 px-12 py-4 bg-secundary text-slate-100 font-bold text-xl rounded-xl"
-                type="button"> Enviar 
-            </button>
-          </form>
-        </div>
-      </div>
+      <ContactForm/>
 
       {/* Rodapé */}
       <Botton/>
