@@ -33,7 +33,7 @@ const CarouselProduction = () => {
   };
 
   return (
-    <div className="px-2 md:py-8">
+    <div className="px-16 md:py-8">
       <div className="md:py-8 flex flex-1 justify-center">
         <div className="text-2xl md:text-4xl md:w-max font-semibold text-primary p-4">
           Processo Produtivo
