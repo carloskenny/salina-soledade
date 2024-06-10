@@ -25,6 +25,7 @@ O site tem uma página principal no modelo landingpage e outras páginas de apoi
 - Configurar o arquivo .env.local:
 - 
     crie o arquivo .env.local na raiz do projeto com as variáveis iguais ao arquivo .env.example
+  
       - NEXT_PUBLIC_EMAIL_HOST: servidor smtp
           ex.: smtp.dominio.com
       - NEXT_PUBLIC_EMAIL_PORT: porta do servidor smtp (465 ou 587)
