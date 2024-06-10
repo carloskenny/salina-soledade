@@ -24,8 +24,11 @@ O site tem uma página principal no modelo landingpage e outras páginas de apoi
     npm install
 - Configurar o arquivo .env:
     crie um arquivo na raiz do projeto com as variáveis iguais ao arquivo .env.example
-- Iniciar o serviço:
+- Iniciar o serviço em desenvolvimento:
     npm run dev
+- Iniciar o serviço em produção:
+    npm run build
+    npm run start
 
 ## Contribuindo
 
