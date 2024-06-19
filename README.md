@@ -21,7 +21,7 @@ O site tem uma página principal no modelo landingpage e outras páginas de apoi
 - Clonar o repositório:
     git clone
 - Instalar as dependências:
-    npm install
+    
 - Configurar o arquivo .env.local:
 - 
     crie o arquivo .env.local na raiz do projeto com as variáveis iguais ao arquivo .env.example
