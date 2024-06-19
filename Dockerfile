@@ -5,7 +5,7 @@ FROM node:lts-alpine
 WORKDIR /app
 
 # Copia os arquivos de package.json e package-lock.json
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Instala as dependências do projeto
 RUN npm install
