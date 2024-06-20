@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json ./
 
 # Instala as dependências do projeto
-RUN npm install
+RUN npm install --loglevel verbose
 
 # Copia todos os outros arquivos do projeto
 COPY . .
