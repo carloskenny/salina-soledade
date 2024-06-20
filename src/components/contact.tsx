@@ -50,6 +50,7 @@ export default function ContactForm() {
     } catch (error) {
       console.log(error);
       alert("Sua mensagem não foi enviada, por favor, tentar novamente!");
+      setLoading(false);
     }
   }
 
