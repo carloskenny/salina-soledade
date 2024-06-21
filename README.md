@@ -19,12 +19,7 @@ O site tem uma página principal no modelo landingpage e outras páginas de apoi
 ## Instalação
 
 - Clonar o repositório:
-    git clone
-- Instalar as dependências:
-    
-- Configurar o arquivo .env.local:
-- 
-    crie o arquivo .env.local na raiz do projeto com as variáveis iguais ao arquivo .env.example
+- Crie o arquivo .env na raiz do projeto com as variáveis iguais ao arquivo .env.example
   
       - NEXT_PUBLIC_EMAIL_HOST: servidor smtp
           ex.: smtp.dominio.com
@@ -37,19 +32,17 @@ O site tem uma página principal no modelo landingpage e outras páginas de apoi
       - NEXT_PUBLIC_EMAIL_TO: endereços de email a enviar as informações (Destinatário) separado por vírgulas sem espaço.
           ex.: username1@dominio.com.br,username2@dominio.com.br
 
-- Iniciar o serviço em desenvolvimento:
-    npm run dev
-- Iniciar o serviço em produção:
-    npm run build
-    npm run start
+- Realizar a build do proejto
+    docker compose build
+- Iniciar o projeto em produção:
+    docker compose up
 
 ## Contribuindo
 
 Carlos Kenny
-
-## Autores
-
-Carlos Kenny
+Jhunior Santos
+Joe Silva
+Vinicius Gonçalves
 
 ## Licença
 
